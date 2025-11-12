@@ -1,18 +1,48 @@
 {
-  "usuarios": [
+  "artistas": [
     {
-      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "id": "1",
+      "nome": "Luna Ferreira",
+      "genero": "Pop",
+      "descricao": "Cantora brasileira com influência do pop alternativo.",
+      "imagem": "https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3635092:1743188680/LuedjiLuna%20-%20foto%20Henrique%20Falci%20-%20Fernanda%20Martucci.jpg?f=1x1&h=1280&w=1280&$p$f$h$w=5faec66",
+      "redes": {
+        "instagram": "https://instagram.com/lunaferreira",
+        "spotify": "https://spotify.com/lunaferreira"
+      }
     },
     {
-      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "nome": "DJ WS da Igrejinha",
+      "genero": "Funk",
+      "descricao": "Agora com novo estilo house.",
+      "imagem": "https://cdn-images.dzcdn.net/images/artist/d4006a72401d79517da782f13c7360d1/1900x1900-000000-80-0-0.jpg",
+      "redes": {
+        "instagram": "https://instagram.com/djorion",
+        "spotify": "https://spotify.com/djorion"
+      },
+      "id": "2"
+    },
+    {
+      "id": "33f6",
+      "nome": "Nova Artista",
+      "genero": "Rock",
+      "descricao": "Cantora de rock nacional.",
+      "imagem": "https://d1muf25xaso8hp.cloudfront.net/https://img.criativodahora.com.br/homologacao/thumbs/2025/08/02/01986b3d-e271-700f-96cb-e995b2cf1840.jpg?w=1000&h=&auto=compress&dpr=1&fit=max",
+      "redes": {
+        "instagram": "https://instagram.com/novarock",
+        "spotify": "https://spotify.com/novarock"
+      }
+    },
+    {
+      "id": "996a",
+      "nome": "Leslie Odom Jr.",
+      "genero": "Rap",
+      "descricao": "Leslie Odom Jr. é um ator e cantor estadunidense. Ele mais é conhecido por ter interpretado o papel de Aaron Burr no musical da Broadway Hamilton, pelo qual ganhou o Tony Award de 2016 e o Grammy de melhor álbum de teatro musical como vocalista principal. Seus papéis na televisão incluem Sam Strickland na série Smash.",
+      "imagem": "https://dgpuo8cwvztoe.cloudfront.net/uploads/_f_lg/zimage0.png",
+      "redes": {
+        "instagram": "https://www.instagram.com/leslieodomjr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+        "spotify": "https://open.spotify.com/intl-pt/artist/3cR4rhS2hBWqI7rJEBacvN?si=CTk3YvEOQSaJzRGpOwS4Kg"
+      }
     }
   ]
 }

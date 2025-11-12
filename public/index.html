@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Music Discover</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <div id="logo"> <a href="index.html"><img src="assets/imgs/logo.png" alt="Logo do site"></a> </div>
+    <div class="menu">
+      <nav> <a href="index.html">Home</a> <a href="index.html">Descobrir</a> <a href="index.html">Gêneros</a>
+        <a href="index.html">Charts</a> <a href="index.html">Playlists</a>
+      </nav>
+    </div>
+    <div class="search-profile">
+      <div id="divBusca"> <input type="text" id="txtBusca" placeholder="Buscar artistas, músicas..." /> <img
+          class="search_img" src="assets/imgs/search.png" id="btnBusca" alt="Buscar" /> </div> <a href="#"><img
+          class="perfil-icon" src="assets/imgs/profile.png" alt="perfil"> </a>
+    </div>
+  </header>
+  <main>
+    <h1>Artistas em Destaque</h1>
+    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+      <div class="carousel-inner"> </div> <button class="carousel-control-prev" type="button"
+        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev"> <span
+          class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span>
+      </button> <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+        data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span
+          class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+    <h2>Explore Gêneros</h2>
+    <p class="descricoes">Encontre artistas por estilo musical
+    <p>
+    <div class="card-group" id-="generos-conteiner">
+      <div class=" card"> <img src="assets/imgs/Sonic-Youth-1.jpg" class="card-img-top" alt="Indie Rock">
+        <h4 class="card-title">Indie Rock</h4>
+        <h5 class="card-title">567 artistas</h5>
+      </div>
+      <div class="card"> <img src="assets/imgs/rock.jpg" class="card-img-top" alt="Rock">
+        <h4 class="card-title">Rock</h4>
+        <h5 class="card-title">130 artistas</h5>
+      </div>
+      <div class="card"> <img src="assets/imgs/pop.webp" class="card-img-top" alt="Pop">
+        <h4 class="card-title">Pop</h4>
+        <h5 class="card-title">780 artistas</h5>
+      </div>
+      <div class="card"> <img src="assets/imgs/jazz.webp" class="card-img-top" alt="Jazz">
+        <h4 class="card-title">Jazz</h4>
+        <h5 class="card-title">120 artistas</h5>
+      </div>
+      <div class="card"> <img src="assets/imgs/r&b.jpeg" class="card-img-top" alt="R&b">
+        <h4 class="card-title">R&B</h4>
+        <h5 class="card-title">312 artistas</h5>
+      </div>
+      <a href="" style=" text-decoration: none">
+        <h4 class="ver-todos-cards">Ver todos</h4>
+      </a>
+    </div>
+    </section>
+    </div>
+    <h2>Explore Artistas</h2>
+    <p class="descricoes">Encontre novos talentos
+    <p>
+    <div> <img class="explore-artistas" src="assets/imgs/daren criss.jpg" alt="Daren Criss">
+      <h4 class="text-white">Daren Criss</h4>
+      <h5 class="text-white">Pop Rock</h5>
+    </div>
+    <div> <img class="explore-artistas" src="assets/imgs/evie asio.webp" alt="Evie Asio">
+      <h4 class="text-white">Evie Asio</h4>
+      <h5 class="text-white">R&B</h5>
+    </div>
+    <div> <img class="explore-artistas" src="assets/imgs/Beabadoobee.webp" alt="beabadoobee">
+      <h4 class="text-white">beabadoobee</h4>
+      <h5 class="text-white">K-pop</h5>
+    </div>
+    <div id="lista-artistas"></div>
+    <div>
+      <h3 class="text-white">Ver todos</h3> <img id="seta" src="assets/imgs/seta.png" alt="seta">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+    <script src="assets/scripts/app.js"></script>
+  </main>
+  <footer>
+    <section class="sobre">
+      <h2 class="text-white">Informações da Aluna</h2>
+      <h3 class="text-white">Sobre </h3>
+      <p>O site apresenta novos artistas aos usuários, destacando diferentes gêneros musicais. Ao selecionar
+        um artista, o usuário pode acessar links para suas redes sociais e ser redirecionado diretamente
+        para suas páginas no Spotify, YouTube ou SoundCloud.</p>
+    </section>
+    <section class="autoria">
+      <h3>Autoria</h3>
+      <p>Aluna: Júlia do Carmo Costa Rocha e Silva.</p> Curso: Engenharia de Software.
+    </section>
+  </footer>
+</body>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Artistas</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    body {
+      background-color: #ffffff;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    main {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #000000;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: rgb(95, 95, 197) !important;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: white;
+    }
+
+    input[type="text"],
+    input[type="url"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: none;
+      background-color: #f0f0f0;
+    }
+
+    button {
+      background-color: rgb(95, 95, 197);
+      color: rgb(255, 255, 255);
+      border: none;
+      padding: 10px 15px;
+      border-radius: 10px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background 0.3s;
+      display: block;
+      width: 100%;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #3a3a8b;
+    }
+
+    .mensagem {
+      text-align: center;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    a.voltar {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    a.voltar:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div id="logo">
+      <a href="index.html"><img src="assets/imgs/logo.png" alt="Logo do site" style="max-width:150px;"></a>
+    </div>
+  </header>
+
+  <main>
+    <h1>Cadastro de Artistas</h1>
+    <form id="formArtista">
+      <label for="nome">Nome do Artista</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="genero">Gênero Musical</label>
+      <input type="text" id="genero" name="genero" required>
+
+      <label for="descricao">Descrição</label>
+      <textarea id="descricao" name="descricao" rows="4" required></textarea>
+
+      <label for="imagem">URL da Imagem</label>
+      <input type="url" id="imagem" name="imagem" required>
+
+      <label for="instagram">Instagram</label>
+      <input type="url" id="instagram" name="instagram">
+
+      <label for="spotify">Spotify</label>
+      <input type="url" id="spotify" name="spotify">
+
+      <button type="submit">Cadastrar Artista</button>
+    </form>
+
+    <p class="mensagem" id="mensagem"></p>
+    <a href="index.html" class="voltar"> Voltar para a página inicial</a>
+  </main>
+
+  <script>
+    const form = document.getElementById("formArtista");
+    const mensagem = document.getElementById("mensagem");
+    const API_URL = "http://localhost:3000/artistas";
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const novoArtista = {
+        nome: form.nome.value,
+        genero: form.genero.value,
+        descricao: form.descricao.value,
+        imagem: form.imagem.value,
+        redes: {
+          instagram: form.instagram.value,
+          spotify: form.spotify.value
+        }
+      };
+
+      try {
+        const resposta = await fetch(API_URL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(novoArtista)
+        });
+
+        if (resposta.ok) {
+          mensagem.style.color = "lightgreen";
+          mensagem.textContent = "🎶 Artista cadastrado com sucesso!";
+
+
+          setTimeout(() => {
+            window.location.href = "index.html";
+          }, 1500);
+        } else {
+          throw new Error("Erro ao cadastrar artista");
+        }
+      } catch (erro) {
+        mensagem.style.color = "red";
+        mensagem.textContent = "Falha ao cadastrar artista.";
+        console.error(erro);
+      }
+    });
+  </script>
+</body>
+
+</html>

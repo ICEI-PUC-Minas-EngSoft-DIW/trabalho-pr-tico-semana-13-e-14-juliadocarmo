@@ -1,0 +1,687 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+#logo img {
+  max-width: 150px;
+  height: auto;
+  display: block;
+}
+
+.menu nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu nav a {
+  color: navy;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 400;
+  transition: color 0.3s;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.menu nav a:hover {
+  color: rgb(129, 119, 119);
+}
+
+/* Barra de busca */
+#divBusca {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2c2c2c;
+  border-radius: 25px;
+  padding: 5px 15px;
+  margin-right: 30px;
+  color: white;
+}
+
+#txtBusca {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  padding: 10px;
+  width: 200px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search_img {
+  height: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  filter: invert(100%);
+}
+
+.search-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.perfil-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+
+/* Conteúdo principal */
+main {
+  padding: 40px;
+}
+
+h2 {
+  margin-top: 80px;
+}
+
+h1,
+h2 {
+  color: navy !important;
+  margin-bottom: 10px !important;
+  margin-top: 10px !important;
+}
+
+h4,
+h5 {
+  margin-bottom: 5px;
+  color: white;
+}
+
+article {
+  display: flex;
+  margin: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.main-artists {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  justify-content: space-between;
+  line-height: 30px;
+  gap: 20px;
+}
+
+.main-artists:hover {
+  transform: scale(1.02);
+}
+
+.artists {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  margin-bottom: 15px;
+}
+
+/*Nomes dos artistas*/
+.nomes-artistas {
+  margin: 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* Botões */
+.main-artists button {
+  background-color: navy;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 7px;
+  display: block;
+  margin: 15px auto 0 auto;
+  align-self: center;
+}
+
+.conteudo-artista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main>div {
+  background-color: #2c2c2c;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+main>div:hover {
+  transform: scale(1.02);
+}
+
+.card-title {
+  padding-left: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card {
+  margin-right: 30px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  background-color: navy;
+  color: white;
+}
+
+.ver-todos-cards {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.explore-artistas {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+/*Ver todos*/
+h3 {
+  color: white;
+}
+
+/*Nomes dos artistas do Explore Artistas*/
+.explore-nomes {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#seta {
+  float: right;
+  height: 30px;
+  margin-left: 5px;
+  filter: invert(100%);
+}
+
+/*Descrições */
+.descricoes {
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  color: grey;
+}
+
+/* Rodapé */
+footer {
+  background-color: #2c2c2c;
+  padding: 30px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+}
+
+/*CSS para a página detalhes*/
+#detalhes-artista {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.detalhe-img {
+  width: 300px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.redes-detalhes a {
+  color: #ff4b2b;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo-detalhes {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.menu-detalhes nav {
+  display: flex;
+  justify-content: center;
+  margin-right: 100px;
+}
+
+.menu-detalhes nav a {
+  color: navy;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 400;
+  transition: color 0.3s;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.menu-detalhes nav a:hover {
+  color: rgb(129, 119, 119);
+}
+
+/* CSS para os artistas carregados via JSONServer */
+#lista-artistas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Card de cada artista */
+.artista-card {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artista-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Imagem do artista */
+.artista-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Nome e gênero */
+.artista-card h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.artista-card p {
+  color: #dcdcdc;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Botões */
+.artista-card button {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  margin: 0.3rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Botão Editar */
+.artista-card button:nth-child(1) {
+  background-color: #7b5ce6;
+  color: #fff;
+}
+
+.artista-card button:nth-child(1):hover {
+  background-color: #9578ff;
+  transform: scale(1.05);
+}
+
+/* Botão Excluir */
+.artista-card button:nth-child(2) {
+  background-color: #d94c4c;
+  color: #fff;
+}
+
+.artista-card button:nth-child(2):hover {
+  background-color: #ff6b6b;
+  transform: scale(1.05);
+}
+
+
+
+/* Tablets e telas médias */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 15px;
+  }
+
+  #logo img {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .search-profile {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  #divBusca {
+    flex: 1;
+    max-width: 90%;
+  }
+
+  .main-artists {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .menu nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu nav a {
+    margin: 5px 10px;
+    font-size: 16px;
+  }
+
+  .card-group {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    margin: 10px;
+  }
+
+  .card-img-top {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Celulares grandes */
+@media (max-width: 766px) {
+  main {
+    padding: 15px;
+  }
+
+  h1,
+  h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .explore-artistas {
+    width: 150px;
+    height: 150px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .descricoes {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  #divBusca {
+    max-width: 100%;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  #logo img {
+    width: 120px;
+  }
+
+  .menu nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu nav a {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  .perfil-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .explore-artistas {
+    width: 100px;
+    height: 100px;
+  }
+
+  .card-img-top {
+    width: 120px;
+    height: 120px;
+  }
+
+  .card {
+    margin: 5px;
+  }
+
+  main>div {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Microcelulares / telas muito pequenas */
+@media (max-width: 360px) {
+
+  h1,
+  h2 {
+    font-size: 16px;
+  }
+
+  #txtBusca {
+    width: 120px;
+  }
+
+  .card-title {
+    font-size: 14px;
+  }
+
+  .descricoes {
+    font-size: 14px;
+  }
+}
+
+/* Ajuste específico para o card "Ver todos" */
+.card:last-child .card-img-top {
+  width: 225px;
+  /* padrão desktop */
+  height: 223px;
+  object-fit: cover;
+}
+
+/* Tablets e telas médias */
+@media (max-width: 1024px) {
+  .card:last-child .card-img-top {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* Celulares grandes */
+@media (max-width: 768px) {
+  .card:last-child .card-img-top {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+  .card:last-child .card-img-top {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Microcelulares */
+@media (max-width: 360px) {
+  .card:last-child .card-img-top {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Tablets (telas até 768px) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-detalhes nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .menu-detalhes nav a {
+    margin: 5px 10px 5px 0;
+  }
+
+  #galeria-container.galeria img {
+    width: 150px;
+    margin: 8px;
+  }
+}
+
+/* Celulares (telas até 480px) */
+@media (max-width: 480px) {
+  header img.logo-detalhes {
+    max-width: 120px;
+  }
+
+  .menu-detalhes nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-detalhes nav a {
+    margin: 5px 0;
+  }
+
+  #detalhes-artista {
+    padding: 10px;
+  }
+
+  #btn-ver-fotos {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 16px;
+  }
+
+  #galeria-container.galeria img {
+    width: 100%;
+    max-width: 200px;
+    margin: 5px 0;
+  }
+}
+
+/* Celulares grandes (até 768px) */
+@media (max-width: 768px) {
+  #generos-container {
+    gap: 15px;
+  }
+
+  #generos-container .card {
+    flex: 1 1 140px;
+    max-width: 150px;
+  }
+
+  #generos-container .card-img-top {
+    height: 140px;
+  }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+  #generos-container {
+    gap: 10px;
+  }
+
+  #generos-container .card {
+    flex: 1 1 100px;
+    max-width: 120px;
+  }
+
+  #generos-container .card-img-top {
+    height: 120px;
+  }
+}
+
+/* Microcelulares / telas muito pequenas (até 360px) */
+@media (max-width: 360px) {
+  #generos-container {
+    gap: 8px;
+  }
+
+  #generos-container .card {
+    flex: 1 1 90px;
+    max-width: 100px;
+  }
+
+  #generos-container .card-img-top {
+    height: 100px;
+  }
+}
