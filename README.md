@@ -9,15 +9,17 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Júlia do Carmo Costa Rocha e Silva
+- Matricula: 898669
+- Proposta de projeto escolhida: Um site para ajudar a descobrir novos artistas.
+- Breve descrição sobre seu projeto: O site apresenta novos artistas aos usuários, destacando diferentes gêneros musicais. Ao selecionar um artista, o usuário pode acessar links paragi suas redes sociais e ser redirecionado diretamente para suas páginas no Spotify, YouTube ou SoundCloud.
 
 **Print da tela com a implementação**
 
-<< Coloque aqui uma breve explicação da implementação feita nessa etapa>>
+Foi criado gráficos baseados nos gêneros disponiveís no Music Discover. O gráfico muda de acordo com os artistas, e seus respectivos gêneros musicais, adicionados ou removidos do site.
 
-<<  COLOQUE A IMAGEM TELA 1 AQUI >>
+![Gráfico sem a primeira alteração](public/assets/imgs/Gráfico1.png)
 
-<<  COLOQUE A IMAGEM TELA 2 AQUI >>
+![Gráfico depois da alteração](public/assets/imgs/Grafico2.png)
+
+

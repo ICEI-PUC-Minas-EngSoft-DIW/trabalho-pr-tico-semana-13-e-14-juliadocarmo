@@ -23,17 +23,6 @@
       "id": "2"
     },
     {
-      "id": "33f6",
-      "nome": "Nova Artista",
-      "genero": "Rock",
-      "descricao": "Cantora de rock nacional.",
-      "imagem": "https://d1muf25xaso8hp.cloudfront.net/https://img.criativodahora.com.br/homologacao/thumbs/2025/08/02/01986b3d-e271-700f-96cb-e995b2cf1840.jpg?w=1000&h=&auto=compress&dpr=1&fit=max",
-      "redes": {
-        "instagram": "https://instagram.com/novarock",
-        "spotify": "https://spotify.com/novarock"
-      }
-    },
-    {
       "id": "996a",
       "nome": "Leslie Odom Jr.",
       "genero": "Rap",
@@ -42,6 +31,28 @@
       "redes": {
         "instagram": "https://www.instagram.com/leslieodomjr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
         "spotify": "https://open.spotify.com/intl-pt/artist/3cR4rhS2hBWqI7rJEBacvN?si=CTk3YvEOQSaJzRGpOwS4Kg"
+      }
+    },
+    {
+      "id": "435d",
+      "nome": "Ariana Grande ",
+      "genero": "Pop",
+      "descricao": "Ariana Grande-Butera é uma cantora, compositora e atriz norte-americana. Ao longo da carreira, tornou-se uma das cantoras mais ouvidas da história da música em streaming e um dos nomes de maior relevância da música pop na atualidade",
+      "imagem": "https://tmjbrazil.com.br/wp-content/uploads/2024/12/Ariana-Grande-explica-por-que-nao-fara-turne-em-2025.png",
+      "redes": {
+        "instagram": "https://www.instagram.com/arianagrande?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+        "spotify": "https://open.spotify.com/intl-pt/artist/66CXWjxzNUsdJxJ2JdwvnR?si=1D_S212NREy0Z1MhCseNfw"
+      }
+    },
+    {
+      "id": "2782",
+      "nome": "Katseye",
+      "genero": "Kpop",
+      "descricao": "Katseye é um grupo feminino formado pela Hybe UMG e Geffen Records e baseado em Los Angeles. O grupo é composto por seis integrantes: Manon, Sophia, Daniela, Lara, Megan e Yoonchae. Com membros da Filipinas, Coreia do Sul, Suíça e Estados Unidos, é comumente descrito como um grupo feminino global.",
+      "imagem": "https://inmagazine.ig.com.br/wp-content/uploads/2025/09/katseye-entra-no-top-50-da-billboard-com-gabriela-e-confirma-avanco-nos-eua.webp",
+      "redes": {
+        "instagram": "https://www.instagram.com/katseyeworld?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+        "spotify": "https://open.spotify.com/intl-pt/artist/3c0gDdb9lhnHGFtP4prQpn?si=5QrMA-70TyqbZU4bDFRd8A"
       }
     }
   ]

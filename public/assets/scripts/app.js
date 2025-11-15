@@ -141,22 +141,24 @@ if (detalhesContainer && idArtista) {
 }
 
 
+
 const API_URL = "http://localhost:3000/artistas";
 const lista = document.getElementById("lista-artistas");
 
-// mostrar os artistas
+//  mostrar os artistas
 async function carregarArtistas() {
   const res = await fetch(API_URL);
   const artistas = await res.json();
   lista.innerHTML = "";
+
   artistas.forEach((a) => {
     lista.innerHTML += `
       <div class="artista-card">
         <img src="${a.imagem}" alt="${a.nome}" width="100">
         <h3>${a.nome}</h3>
         <p>${a.genero}</p>
-        <button onclick="editarArtista(${a.id})">Editar</button>
-        <button onclick="excluirArtista(${a.id})">Excluir</button>
+        <button onclick="editarArtista('${a.id}')">Editar</button>
+        <button onclick="excluirArtista('${a.id}')">Excluir</button>
       </div>
     `;
   });
@@ -167,7 +169,14 @@ async function cadastrarArtista() {
   const nome = document.getElementById("nome").value;
   const genero = document.getElementById("genero").value;
 
-  const novo = { nome, genero, descricao: "", imagem: "", redes: {} };
+  const novo = {
+    id: crypto.randomUUID(),
+    nome,
+    genero,
+    descricao: "",
+    imagem: "",
+    redes: {}
+  };
 
   await fetch(API_URL, {
     method: "POST",
@@ -177,13 +186,14 @@ async function cadastrarArtista() {
 
   carregarArtistas();
 }
-// update
+
+// editar
 async function editarArtista(id) {
   const novoNome = prompt("Novo nome:");
   if (!novoNome) return;
 
   await fetch(`${API_URL}/${id}`, {
-    method: "PUT",
+    method: "PATCH",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ nome: novoNome })
   });
@@ -199,5 +209,5 @@ async function excluirArtista(id) {
   }
 }
 
-// inicializa a listagem
+
 carregarArtistas();
